@@ -30,29 +30,26 @@ class Create_planet:
             self.move_x = -1
             self.move_y = 0
         elif pos_x < 450 and pos_y < 450 and dist > self.limit:
-            self.move_x = -1
+            self.move_x = 0
             self.move_y = 1
         elif pos_x < 450 and pos_y > 450 and dist < self.limit:
             self.move_x = 0
             self.move_y = 1
         elif pos_x < 450 and pos_y > 450 and dist > self.limit:
             self.move_x = 1
-            self.move_y = 1
+            self.move_y = 0
         elif pos_x > 450 and pos_y > 450 and dist < self.limit:
             self.move_x = 1
             self.move_y = 0
-        elif pos_x < 450 and pos_y > 450 and dist > self.limit:
-            self.move_x = 1
+        elif pos_x > 450 and pos_y > 450 and dist > self.limit:
+            self.move_x = 0
             self.move_y = -1
         elif pos_x > 450 and pos_y < 450 and dist < self.limit:
             self.move_x = 0
             self.move_y = -1
-        elif pos_x < 450 and pos_y < 450 and dist > self.limit:
+        elif pos_x > 450 and pos_y < 450 and dist > self.limit:
             self.move_x = -1
-            self.move_y = -1
-
-        print(pos_x, pos_y, dist, self.limit)
-
+            self.move_y = -0
 
     def create_planet_on_canvas(self):
         planet = self.canvas.create_oval(self.x1, self.x2, self.y1, self.y2, fill=self.color)
