@@ -10,10 +10,10 @@ class Create_sun:
         self.sun = self.create_sun_on_canvas()
 
     def create_coords(self):
-        x1 = 1000/2 - 40
-        y1 = 1000/2 + 40
-        x2 = 1000/2 - 40
-        y2 = 1000/2 + 40
+        x1 = 900/2 - 25
+        y1 = 900/2 + 25
+        x2 = 900/2 - 25
+        y2 = 900/2 + 25
         return x1, x2, y1, y2
 
     def create_sun_on_canvas(self):
