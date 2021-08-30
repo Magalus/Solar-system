@@ -16,7 +16,7 @@ def create_window():
 if __name__ == '__main__':
     gui, canvas = create_window()
 
-    sun = Create_sun("yellow", 1391900, 200, 75000, canvas)
+    sun = Create_sun("yellow", 25, canvas)
     mercury = Create_planet("white", 3, 60, 9, canvas)
     venus = Create_planet("green", 6, 70, 6, canvas)
     earth = Create_planet("blue", 6, 80, 5, canvas)
